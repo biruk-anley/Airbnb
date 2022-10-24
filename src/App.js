@@ -1,15 +1,17 @@
 
 import './App.css'
-import Footer from './Components/Footer';
+
 import Header from './Components/Header';
+import Hero from './Components/Hero';
 import MainContent from './Components/MainContent';
 
 function App() {
   return (
     <div className="App">
      <Header/>
-     <MainContent/>
-     <Footer/>
+     {/* <MainContent/> */}
+     <Hero/>
+
       
     </div>
   );
