@@ -7,7 +7,7 @@ const Hero =()=>{
     return (
         <div className="Hero">
             <img src={katie}/>
-            p
+            
             <div className='card--status'>
                 <span> <img src={star}/>  </span>
                 <span> 5.0 </span>
@@ -16,7 +16,7 @@ const Hero =()=>{
 
             </div>
             <p>Life lessons with Katie Zaferes</p>
-            <p>From $136 / person</p>
+            <p>From <b>$136</b> / person</p>
         </div>
     )
 }
