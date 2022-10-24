@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../src/logo.svg'
+import logo from '../../src/images/airbnb.png'
 
 
 const Header=()=>{
@@ -7,15 +7,9 @@ const Header=()=>{
       <header>
         <nav>
           <div className='Logo'>
-            <img src={logo} style={{ width: "150px" }}/>
-            <h2>React Facts</h2>
-          </div>
+            <img src={logo} style={{ width: "110px" }}/>
           
-          <ul className='nav-item'>
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
+          </div>
         </nav>
       </header>
     )
