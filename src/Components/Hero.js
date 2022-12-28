@@ -3,20 +3,21 @@ import star from '../images/star.svg'
 
 
 
-const Hero =()=>{
+const Hero =(props)=>{
+    console.log('props',props)
     return (
         <div className="Hero">
             <img src={katie}/>
             
             <div className='card--status'>
                 <span> <img src={star}/>  </span>
-                <span> 5.0 </span>
-                <span style={{color:'grey'}}>(6) . </span>
-                <span style={{color:'grey'}}> USA </span>
+                <span>{props.rating}</span>
+                <span style={{color:'grey'}}>({props.reviewCount}) . </span>
+                <span style={{color:'grey'}}> {props.country} </span>
 
             </div>
-            <p>Life lessons with Katie Zaferes</p>
-            <p>From <b>$136</b> / person</p>
+            <p>{props.title}</p>
+            <p>From <b>{props.price}</b> / person</p>
         </div>
     )
 }
