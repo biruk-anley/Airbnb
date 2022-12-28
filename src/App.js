@@ -11,11 +11,11 @@ const App= ()=> {
      <Header/>
      {/* <MainContent/> */}
      <Hero
-     img="katie.png"
+     img="Katie.png"
      rating="5.0"
      reviewCount={6}
      country="USA"
-     title="Life Lessons with Katie zaferes"
+     title="Life Lessons with Katie"
      price={136}
      
      />
