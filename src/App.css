@@ -1,35 +1,117 @@
+* {
+  box-sizing: border-box;
+}
 
-.Logo{
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+section {
+  padding: 20px;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+.hero--photo {
+  max-width: 400px;
+  align-self: center;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero--header {
+  margin-bottom: 16px;
+}
+
+.hero--text {
+  margin-top: 0;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card{
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  /* ADD */
+  display: flex;
+  /* ADD */
+  flex-direction: column;
+  /* ADD */
+    margin-left: 50px;
+    position: relative;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
   display: flex;
   align-items: center;
 }
-nav{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px;
-  box-shadow: 0px 2.98256px 10.4654px rgba(0, 0, 0, 0.223) inset;
-  background-color:white;
- 
-}
-.main{
-  background-color: white;
-  
-  padding: 50px ;
-  color:black;
-}
-.main h1{
-  margin: 0;
-  font-size:39px;
-  color:black;
-}
-.main p{
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 25px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+
+.card--star {
+  height: 14px;
 }
 
-.Hero{
-  padding: 20px;
+/* ADD */
+.card--price {
+  margin-top: auto;
+}
+.card-badge{
+  background-color: red;
+  width: 100%;
+  height: 20px;
 }

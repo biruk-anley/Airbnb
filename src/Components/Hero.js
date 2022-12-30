@@ -4,18 +4,29 @@ import '../App.css'
 
 
 
-const Hero =(props)=>{
-    console.log('props',props)
+const Hero = (props) => {
+    console.log('props', props.openSpots)
+    let badgeText
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    }
+    else if (props.location === "Online") {
+        badgeText = "ONLINE"
+    }
     return (
-        <div className="Hero">
+        <div className="card">
+            {badgeText && <div className='card-badge'>
+                {badgeText}
+            </div>}
+            
            
             <img src={`../images/${props.imgs}`} />
             
-            <div className='card--status'>
+            <div className='card--stats'>
                 <span> <img src={star}/>  </span>
                 <span>{props.rating}</span>
-                <span style={{color:'grey'}}>({props.reviewCount}) . </span>
-                <span style={{color:'grey'}}> {props.country} </span>
+                <span className='gray' style={{color:'grey'}}>({props.reviewCount}) . </span>
+                <span className='gray' style={{color:'grey'}}> {props.location} </span>
 
             </div>
             <p>{props.title}</p>
