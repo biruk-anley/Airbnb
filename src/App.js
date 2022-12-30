@@ -26,7 +26,7 @@ const App = () => {
     <div>
       <Header />
       {cards}
-      <Hero/>
+      {/* <Hero/> */}
     </div>
   )
 }
