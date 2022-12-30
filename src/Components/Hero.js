@@ -1,4 +1,4 @@
-import Katie from '../images/Katie.png'
+
 import star from '../images/star.svg'
 import '../App.css'
 
