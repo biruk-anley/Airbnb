@@ -4,13 +4,13 @@ import '../App.css'
 
 
 
-const Hero = (props) => {
-    console.log('props', props.openSpots)
+const Hero = ({item}) => {
+    console.log('item', item.openSpots)
     let badgeText
-    if (props.openSpots === 0) {
+    if (item.openSpots === 0) {
         badgeText = "SOLD OUT"
     }
-    else if (props.location === "Online") {
+    else if (item.location === "Online") {
         badgeText = "ONLINE"
     }
     return (
@@ -20,17 +20,17 @@ const Hero = (props) => {
             </div>}
             
            
-            <img src={`../images/${props.imgs}`} />
+            <img src={`../images/${item.coverImg}`} />
             
             <div className='card--stats'>
                 <span> <img src={star}/>  </span>
-                <span>{props.rating}</span>
-                <span className='gray' style={{color:'grey'}}>({props.reviewCount}) . </span>
-                <span className='gray' style={{color:'grey'}}> {props.location} </span>
+                <span>{item.rating}</span>
+                <span className='gray' style={{color:'grey'}}>({item.reviewCount}) . </span>
+                <span className='gray' style={{color:'grey'}}> {item.location} </span>
 
             </div>
-            <p>{props.title}</p>
-            <p>From <b>{props.price}</b> / person</p>
+            <p>{item.title}</p>
+            <p>From <b>{item.price}</b> / person</p>
         </div>
     )
 }
