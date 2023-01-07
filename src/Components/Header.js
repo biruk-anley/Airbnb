@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../images/airbnb.png'
-// adding header component
+
 
 
 const Header=()=>{
