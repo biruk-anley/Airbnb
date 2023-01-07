@@ -1,7 +1,7 @@
 
 import star from '../images/star.svg'
 import '../App.css'
-
+// hero component
 
 
 const Hero = ({item}) => {
@@ -21,6 +21,7 @@ const Hero = ({item}) => {
             
            
             <img src={`../images/${item.coverImg}`} />
+            
             
             <div className='card--stats'>
                 <span> <img src={star}/></span>
