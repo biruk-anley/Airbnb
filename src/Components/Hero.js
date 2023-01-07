@@ -23,7 +23,7 @@ const Hero = ({item}) => {
             <img src={`../images/${item.coverImg}`} />
             
             <div className='card--stats'>
-                <span> <img src={star}/>  </span>
+                <span> <img src={star}/></span>
                 <span>{item.rating}</span>
                 <span className='gray' style={{color:'grey'}}>({item.reviewCount}) . </span>
                 <span className='gray' style={{color:'grey'}}> {item.location} </span>
