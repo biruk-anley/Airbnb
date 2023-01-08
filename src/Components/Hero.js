@@ -2,6 +2,7 @@
 import star from '../images/star.svg'
 import '../App.css'
 // hero component
+// pause 5.41
 
 
 const Hero = ({item}) => {
