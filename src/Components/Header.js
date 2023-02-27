@@ -2,7 +2,7 @@ import React from "react";
 import logo from '../images/airbnb.png'
 
 
-
+// header file
 const Header=()=>{
     return(
       <header>
