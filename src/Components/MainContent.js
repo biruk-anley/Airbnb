@@ -1,5 +1,5 @@
 import main from '../images/main2.png'
-
+//main
 const MainContent=()=>{
     return (
       <div className='main'>
